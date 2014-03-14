@@ -273,6 +273,7 @@ html {
 html {
   font-size: 1em;
   line-height: 1.5em;
+  font-family: sans-serif;
   /* For reponsive layout */
   /* For large body of texts */
   text-rendering: optimizeLegibility;
@@ -284,7 +285,7 @@ html {
   }
 
   line {
-    font-family: \0000319;
+    font-family: \0000320;
   }
 }
 
@@ -293,4 +294,94 @@ html {
 *:after {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Volumes\/Macintosh\%20HD\/Users\/liuzenan\/Dropbox\/Project\/patternlib\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000330;
+  }
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1.125em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Volumes\/Macintosh\%20HD\/Users\/liuzenan\/Dropbox\/Project\/patternlib\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000334;
+  }
+}
+
+h2 {
+  font-size: 3em;
+  line-height: 1.5em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Volumes\/Macintosh\%20HD\/Users\/liuzenan\/Dropbox\/Project\/patternlib\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000338;
+  }
+}
+
+h3 {
+  font-size: 2.25em;
+  line-height: 1.3333333333em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Volumes\/Macintosh\%20HD\/Users\/liuzenan\/Dropbox\/Project\/patternlib\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000342;
+  }
+}
+
+h4 {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Volumes\/Macintosh\%20HD\/Users\/liuzenan\/Dropbox\/Project\/patternlib\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000346;
+  }
+}
+
+h5 {
+  font-size: 1.75em;
+  line-height: 1.7142857143em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Volumes\/Macintosh\%20HD\/Users\/liuzenan\/Dropbox\/Project\/patternlib\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000350;
+  }
+}
+
+h6 {
+  font-size: 1.5em;
+  line-height: 2em;
 }
