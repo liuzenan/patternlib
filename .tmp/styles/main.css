@@ -266,26 +266,7 @@ html {
   }
 
   line {
-    font-family: \000039;
-  }
-}
-
-html {
-  font-size: 1em;
-  line-height: 1.5em;
-  font-family: sans-serif;
-  /* For reponsive layout */
-  /* For large body of texts */
-  text-rendering: optimizeLegibility;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Volumes\/Macintosh\%20HD\/Users\/liuzenan\/Dropbox\/Project\/patternlib\/app\/styles\/main\.scss;
-  }
-
-  line {
-    font-family: \0000320;
+    font-family: \0000310;
   }
 }
 
@@ -302,7 +283,25 @@ html {
   }
 
   line {
-    font-family: \0000330;
+    font-family: \0000316;
+  }
+}
+
+html {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family: sans-serif;
+  /* For reponsive layout */
+  /* For large body of texts */
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Volumes\/Macintosh\%20HD\/Users\/liuzenan\/Dropbox\/Project\/patternlib\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000335;
   }
 }
 
@@ -317,7 +316,7 @@ h1 {
   }
 
   line {
-    font-family: \0000334;
+    font-family: \0000339;
   }
 }
 
@@ -332,7 +331,7 @@ h2 {
   }
 
   line {
-    font-family: \0000338;
+    font-family: \0000343;
   }
 }
 
@@ -347,7 +346,7 @@ h3 {
   }
 
   line {
-    font-family: \0000342;
+    font-family: \0000347;
   }
 }
 
@@ -362,7 +361,7 @@ h4 {
   }
 
   line {
-    font-family: \0000346;
+    font-family: \0000351;
   }
 }
 
@@ -377,7 +376,7 @@ h5 {
   }
 
   line {
-    font-family: \0000350;
+    font-family: \0000355;
   }
 }
 
@@ -385,3 +384,81 @@ h6 {
   font-size: 1.5em;
   line-height: 2em;
 }
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Volumes\/Macintosh\%20HD\/Users\/liuzenan\/Dropbox\/Project\/patternlib\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000368;
+  }
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Volumes\/Macintosh\%20HD\/Users\/liuzenan\/Dropbox\/Project\/patternlib\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000372;
+  }
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+/* @end Typography */
+
+/* @group Links */
+
+/* @end Links */
+
+/* @group Forms */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Volumes\/Macintosh\%20HD\/Users\/liuzenan\/Dropbox\/Project\/patternlib\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003133;
+  }
+}
+
+label {
+  cursor: pointer;
+}
+
+/* @group search */
+
+/* @end search */
+
+/* @end Forms */
+
+/* @group Classes */
+
+/* @group pagination */
+
+/* @end pagination*/
+
+/* @group control */
+
+/* @end control */
+
+/* @group feedback */
+
+/* @end feedback */
+
+/* @group options */
+
+/* @end options*/
+
+/* @end Classes */

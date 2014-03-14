@@ -6,6 +6,13 @@ $base-line-height: 24px;
 
 @include establish-baseline;
 
+// Box sizing for resposive layout
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
 html {
     @include adjust-font-size-to($base-font-size);
     font-family: sans-serif;
@@ -14,13 +21,11 @@ html {
     // -webkit-text-size-adjust: none; 
 
     /* For large body of texts */
-    text-rendering: optimizeLegibility;
+    // text-rendering: optimizeLegibility;
 }
 
-*, *:before, *:after {
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
-  box-sizing: border-box;
+body {
+
 }
 
 #{headings()} {
@@ -51,23 +56,203 @@ h6 {
     @include adjust-font-size-to(24px);
 }
 
+p {
+
+}
+
+// except first paragraph
+p+p {
+
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+i, em {
+    font-style: italic;
+}
+
+hr {
+
+}
+
+// set margins
+p, ul, ol, hr, table, form, fieldset {
+
+}
+
+li {
+
+}
+
 blockquote {
 
 }
 
-.feedback {
+figure {
 
 }
 
+figcaption {
 
+}
+
+article {
+
+}
+
+/* @end Typography */
+
+
+/* @group Links */
+
+a {
+
+}
+a:link,
+a:visited {
+
+}
+a[href]:hover,
+a[href]:focus {
+
+}
+a:active {
+
+}
+
+.logo a, h1 a, h2 a, h3 a {
+
+}
+
+/* @end Links */
+
+/* @group Forms */
+
+label {
+    cursor: pointer;
+}
+input[type],
+textarea,
+select {
+
+}
+input[type="checkbox"],
+input[type="radio"],
+input[type="image"] {
+}
+input:focus,
+textarea:focus,
+select:focus {
+
+}
+input[required],
+textarea[required] {
+}
+button,
+input[type="button"],
+input[type="submit"] {
+
+}
+button:hover,
+button:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+
+}
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+
+}
+
+/* @group search */
+
+[role="search"] {
+
+}
+[role="search"] input {
+
+}
+[role="search"] input[type="image"] {
+
+}
+
+/* @end search */
+
+/* @end Forms */
+
+/* @group Classes */
+
+/* @group pagination */
+
+.pagination {
+}
+.pagination li {
+
+}
+.pagination a {
+
+}
+.pagination a:link,
+.pagination a:visited {
+
+}
+.pagination a[href]:hover,
+.pagination a[href]:focus {
+
+}
+.pagination a:active {
+
+}
+
+/* @end pagination*/
+
+/* @group control */
+
+a.control {
+
+}
+a.control:link,
+a.control:visited {
+
+}
+a.control:hover,
+a.control:focus {
+
+}
+a.control:active {
+
+}
+
+/* @end control */
+
+/* @group feedback */
+
+.feedback {
+
+}
 .error {
 
 }
 
-button {
+/* @end feedback */
+
+/* @group options */
+
+.options {
+
+}
+.options li {
+
+}
+.options a {
 
 }
 
-input[type=submit] {
-    
-}
+/* @end options*/
+
+/* @end Classes */
