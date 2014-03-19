@@ -291,7 +291,7 @@ module.exports = function (grunt) {
               var app   = grunt.config.get('yeoman.app');
               var files = grunt.file.expand(app + '/patterns/*');
               var frags = _.map(files, function (file) {
-                return grunt.template.process(grunt.file.read(file));
+                return "<div class='pattern'>" + grunt.template.process(grunt.file.read(file)) + "</div>";
               });
               return frags.join('');
             }

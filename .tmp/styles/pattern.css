@@ -1,0 +1,16 @@
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Volumes\/Macintosh\%20HD\/Users\/liuzenan\/Dropbox\/Project\/patternlib\/app\/styles\/pattern\.scss;
+  }
+
+  line {
+    font-family: \000033;
+  }
+}
+
+.pattern {
+  margin: 1em;
+  border: 1px solid #dedede;
+  padding: 1em;
+  border-radius: .2em;
+}
