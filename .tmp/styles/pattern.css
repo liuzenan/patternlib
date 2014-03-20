@@ -4,7 +4,7 @@
   }
 
   line {
-    font-family: \000033;
+    font-family: \000037;
   }
 }
 
@@ -13,4 +13,69 @@
   border: 1px solid #dedede;
   padding: 1em;
   border-radius: .2em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Volumes\/Macintosh\%20HD\/Users\/liuzenan\/Dropbox\/Project\/patternlib\/app\/styles\/pattern\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pattern-title {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #dedede;
+  color: #cccccc;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Volumes\/Macintosh\%20HD\/Users\/liuzenan\/Dropbox\/Project\/patternlib\/app\/styles\/pattern\.scss;
+  }
+
+  line {
+    font-family: \0000321;
+  }
+}
+
+.pattern-example {
+  padding-bottom: 1em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Volumes\/Macintosh\%20HD\/Users\/liuzenan\/Dropbox\/Project\/patternlib\/app\/styles\/pattern\.scss;
+  }
+
+  line {
+    font-family: \0000325;
+  }
+}
+
+code {
+  font-family: Monaco, 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Lucida Console', monospace;
+  font-size: .8em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Volumes\/Macintosh\%20HD\/Users\/liuzenan\/Dropbox\/Project\/patternlib\/app\/styles\/pattern\.scss;
+  }
+
+  line {
+    font-family: \0000330;
+  }
+}
+
+pre {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  overflow-x: scroll;
+  background: #eeeeee;
+  border: 1px solid #dedede;
 }

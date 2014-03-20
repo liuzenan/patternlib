@@ -1,8 +1,37 @@
 @import "compass";
 
+$border-color: #dedede;
+$background-light: #eee;
+$text-light: #ccc;
+
 .pattern {
 	margin: 1em;
-	border: 1px solid #dedede;
+	border: 1px solid $border-color;
 	padding: 1em;
 	border-radius: .2em;
+}
+
+.pattern-title {
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid $border-color;
+	color: $text-light;
+}
+
+.pattern-example {
+	padding-bottom: 1em;
+}
+
+code {
+	font-family: Monaco, 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Lucida Console', monospace;
+	font-size: .8em;
+}
+
+pre {
+	display: block;
+	width: 100%;
+	padding: 1em;
+	overflow-x: scroll;
+	background: $background-light;
+	border: 1px solid $border-color;
 }

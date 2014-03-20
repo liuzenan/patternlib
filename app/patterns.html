@@ -17,7 +17,7 @@
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
-
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -25,64 +25,125 @@
         <![endif]-->
         
         <div class="patterns">
-            <div class='pattern'><blockquote>
-<p>This text is quoted. A block of quoted text like this is particularly useful when presented as a pull-quote within an article of text.</p>
-</blockquote></div><div class='pattern'><div class="feedback error">
-<p>This is an error feedback message.</p>
-</div></div><div class='pattern'><div class="feedback">
-<p>This is a feedback message for the user.</p>
-</div></div><div class='pattern'><button>Button element</button>
+            <div class='pattern'><div class='pattern-title'>blockquote</div><div class='pattern-example'><blockquote>
+ <p>This text is quoted. A block of quoted text like this is particularly useful when presented as a pull-quote within an article of text.</p>
+</blockquote></div><pre><code class='prettyprint'>&lt;blockquote&gt;
+ &lt;p&gt;This text is quoted. A block of quoted text like this is particularly useful when presented as a pull-quote within an article of text.&lt;/p&gt;
+&lt;/blockquote&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>feedback error</div><div class='pattern-example'><div class="feedback error">
+ <p>This is an error feedback message.</p>
+</div></div><pre><code class='prettyprint'>&lt;div class=&quot;feedback error&quot;&gt;
+ &lt;p&gt;This is an error feedback message.&lt;/p&gt;
+&lt;/div&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>feedback</div><div class='pattern-example'><div class="feedback">
+ <p>This is a feedback message for the user.</p>
+</div></div><pre><code class='prettyprint'>&lt;div class=&quot;feedback&quot;&gt;
+ &lt;p&gt;This is a feedback message for the user.&lt;/p&gt;
+&lt;/div&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>form buttons</div><div class='pattern-example'><button>Button element</button>
 
-<input type="submit" value="Submit button"></div><div class='pattern'><label><input type="checkbox"> Label text</label></div><div class='pattern'><label>Label text</label>
-<input type="email"></div><div class='pattern'><label>Label text</label>
-<input type="number"></div><div class='pattern'><select>
-<option>option text</option>
-</select></div><div class='pattern'><label>Label text</label>
-<input type="text"></div><div class='pattern'><label>Label text</label>
-<textarea rows="5" cols="20"></textarea></div><div class='pattern'><label>Label text</label>
-<input type="url"></div><div class='pattern'><h1>Level one heading</h1></div><div class='pattern'><h2>Level two heading</h2></div><div class='pattern'><h3>Level three heading</h3></div><div class='pattern'><h4>Level four heading</h4></div><div class='pattern'><h5>Level five heading</h5></div><div class='pattern'><h6>Level six heading</h6></div><div class='pattern'><ol>
-<li>First list item</li>
-<li>Second item in a list of ordered items</li>
-<li>Third item in the list</li>
+<input type="submit" value="Submit button"></div><pre><code class='prettyprint'>&lt;button&gt;Button element&lt;/button&gt;
+
+&lt;input type=&quot;submit&quot; value=&quot;Submit button&quot;&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>form checkbox</div><div class='pattern-example'><label>
+ <input type="checkbox"> Label text
+</label></div><pre><code class='prettyprint'>&lt;label&gt;
+ &lt;input type=&quot;checkbox&quot;&gt; Label text
+&lt;/label&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>form email</div><div class='pattern-example'><label>Label text</label>
+<input type="email"></div><pre><code class='prettyprint'>&lt;label&gt;Label text&lt;/label&gt;
+&lt;input type=&quot;email&quot;&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>form number</div><div class='pattern-example'><label>Label text</label>
+<input type="number"></div><pre><code class='prettyprint'>&lt;label&gt;Label text&lt;/label&gt;
+&lt;input type=&quot;number&quot;&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>form select</div><div class='pattern-example'><select>
+ <option>option text</option>
+</select></div><pre><code class='prettyprint'>&lt;select&gt;
+ &lt;option&gt;option text&lt;/option&gt;
+&lt;/select&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>form text</div><div class='pattern-example'><label>Label text</label>
+<input type="text"></div><pre><code class='prettyprint'>&lt;label&gt;Label text&lt;/label&gt;
+&lt;input type=&quot;text&quot;&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>form textarea</div><div class='pattern-example'><label>Label text</label>
+<textarea rows="5" cols="20"></textarea></div><pre><code class='prettyprint'>&lt;label&gt;Label text&lt;/label&gt;
+&lt;textarea rows=&quot;5&quot; cols=&quot;20&quot;&gt;&lt;/textarea&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>form url</div><div class='pattern-example'><label>Label text</label>
+<input type="url"></div><pre><code class='prettyprint'>&lt;label&gt;Label text&lt;/label&gt;
+&lt;input type=&quot;url&quot;&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>heading 1</div><div class='pattern-example'><h1>Level one heading</h1></div><pre><code class='prettyprint'>&lt;h1&gt;Level one heading&lt;/h1&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>heading 2</div><div class='pattern-example'><h2>Level two heading</h2></div><pre><code class='prettyprint'>&lt;h2&gt;Level two heading&lt;/h2&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>heading 3</div><div class='pattern-example'><h3>Level three heading</h3></div><pre><code class='prettyprint'>&lt;h3&gt;Level three heading&lt;/h3&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>heading 4</div><div class='pattern-example'><h4>Level four heading</h4></div><pre><code class='prettyprint'>&lt;h4&gt;Level four heading&lt;/h4&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>heading 5</div><div class='pattern-example'><h5>Level five heading</h5></div><pre><code class='prettyprint'>&lt;h5&gt;Level five heading&lt;/h5&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>heading 6</div><div class='pattern-example'><h6>Level six heading</h6></div><pre><code class='prettyprint'>&lt;h6&gt;Level six heading&lt;/h6&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>list ordered</div><div class='pattern-example'><ol>
+ <li>First list item</li>
+ <li>Second item in a list of ordered items</li>
+ <li>Third item in the list</li>
 </ol>
-</div><div class='pattern'><ul>
-<li>A list item</li>
-<li>Another item in a list</li>
-<li>Yet another item in this list of items</li>
-</ul></div><div class='pattern'><ol class="pagination">
-<li><a>1</a></li>
-<li><a href="#">2</a></li>
-<li><a href="#">3</a></li>
-<li><a href="#">4</a></li>
-<li><a href="#">5</a></li>
-<li><a href="#">6</a></li>
-<li><a href="#">7</a></li>
-<li><a href="#">8</a></li>
-<li><a href="#">9</a></li>
-<li><a href="#">10</a></li>
-</ol></div><div class='pattern'><ol class="pagination">
-<li><a href="#">1</a></li>
-<li><a href="#">2</a></li>
-<li><a href="#">3</a></li>
-<li><a href="#">4</a></li>
-<li><a href="#">5</a></li>
-<li><a href="#">6</a></li>
-<li><a href="#">7</a></li>
-<li><a href="#">8</a></li>
-<li><a href="#">9</a></li>
-<li><a>10</a></li>
-</ol></div><div class='pattern'><ol class="pagination">
-<li><a href="#">1</a></li>
-<li><a href="#">2</a></li>
-<li><a href="#">3</a></li>
-<li><a href="#">4</a></li>
-<li><a>5</a></li>
-<li><a href="#">6</a></li>
-<li><a href="#">7</a></li>
-<li><a href="#">8</a></li>
-<li><a href="#">9</a></li>
-<li><a href="#">10</a></li>
-</ol></div><div class='pattern'><p>This is a paragraph of text. Some of the text may be <em>emphasised</em> and some it might even be <strong>strongly emphasised</strong>. Occasionally <q>quoted text</q> may be found within a paragraph &hellip;and of course <a href="#">a link</a> may appear at any point in the text. The average paragraph contains five or six sentences although some may contain as little or one or two while others carry on for anything up to ten sentences and beyond.</p></div>
+</div><pre><code class='prettyprint'>&lt;ol&gt;
+ &lt;li&gt;First list item&lt;/li&gt;
+ &lt;li&gt;Second item in a list of ordered items&lt;/li&gt;
+ &lt;li&gt;Third item in the list&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre></div><div class='pattern'><div class='pattern-title'>list unordered</div><div class='pattern-example'><ul>
+ <li>A list item</li>
+ <li>Another item in a list</li>
+ <li>Yet another item in this list of items</li>
+</ul></div><pre><code class='prettyprint'>&lt;ul&gt;
+ &lt;li&gt;A list item&lt;/li&gt;
+ &lt;li&gt;Another item in a list&lt;/li&gt;
+ &lt;li&gt;Yet another item in this list of items&lt;/li&gt;
+&lt;/ul&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>pagination first</div><div class='pattern-example'><ol class="pagination">
+ <li><a>1</a></li>
+ <li><a href="#">2</a></li>
+ <li><a href="#">3</a></li>
+ <li><a href="#">4</a></li>
+ <li><a href="#">5</a></li>
+ <li><a href="#">6</a></li>
+ <li><a href="#">7</a></li>
+ <li><a href="#">8</a></li>
+ <li><a href="#">9</a></li>
+ <li><a href="#">10</a></li>
+</ol></div><pre><code class='prettyprint'>&lt;ol class=&quot;pagination&quot;&gt;
+ &lt;li&gt;&lt;a&gt;1&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;6&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;7&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;8&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;9&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;10&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>pagination last</div><div class='pattern-example'><ol class="pagination">
+ <li><a href="#">1</a></li>
+ <li><a href="#">2</a></li>
+ <li><a href="#">3</a></li>
+ <li><a href="#">4</a></li>
+ <li><a href="#">5</a></li>
+ <li><a href="#">6</a></li>
+ <li><a href="#">7</a></li>
+ <li><a href="#">8</a></li>
+ <li><a href="#">9</a></li>
+ <li><a>10</a></li>
+</ol></div><pre><code class='prettyprint'>&lt;ol class=&quot;pagination&quot;&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;6&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;7&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;8&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;9&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a&gt;10&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>pagination</div><div class='pattern-example'><ol class="pagination">
+ <li><a href="#">1</a></li>
+ <li><a href="#">2</a></li>
+ <li><a href="#">3</a></li>
+ <li><a href="#">4</a></li>
+ <li><a>5</a></li>
+ <li><a href="#">6</a></li>
+ <li><a href="#">7</a></li>
+ <li><a href="#">8</a></li>
+ <li><a href="#">9</a></li>
+ <li><a href="#">10</a></li>
+</ol></div><pre><code class='prettyprint'>&lt;ol class=&quot;pagination&quot;&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a&gt;5&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;6&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;7&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;8&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;9&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;10&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</code></pre></div><div class='pattern'><div class='pattern-title'>text</div><div class='pattern-example'><p>This is a paragraph of text. Some of the text may be <em>emphasised</em> and some it might even be <strong>strongly emphasised</strong>. Occasionally <q>quoted text</q> may be found within a paragraph &hellip;and of course <a href="#">a link</a> may appear at any point in the text. The average paragraph contains five or six sentences although some may contain as little or one or two while others carry on for anything up to ten sentences and beyond.</p></div><pre><code class='prettyprint'>&lt;p&gt;This is a paragraph of text. Some of the text may be &lt;em&gt;emphasised&lt;/em&gt; and some it might even be &lt;strong&gt;strongly emphasised&lt;/strong&gt;. Occasionally &lt;q&gt;quoted text&lt;/q&gt; may be found within a paragraph &amp;hellip;and of course &lt;a href=&quot;#&quot;&gt;a link&lt;/a&gt; may appear at any point in the text. The average paragraph contains five or six sentences although some may contain as little or one or two while others carry on for anything up to ten sentences and beyond.&lt;/p&gt;</code></pre></div>
         </div>
 
 

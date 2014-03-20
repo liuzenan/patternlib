@@ -291,7 +291,15 @@ module.exports = function (grunt) {
               var app   = grunt.config.get('yeoman.app');
               var files = grunt.file.expand(app + '/patterns/*');
               var frags = _.map(files, function (file) {
-                return "<div class='pattern'>" + grunt.template.process(grunt.file.read(file)) + "</div>";
+                var escapeHTML = function (s) { 
+                    return s.replace(/&/g, '&amp;')
+                            .replace(/"/g, '&quot;')
+                            .replace(/</g, '&lt;')
+                            .replace(/>/g, '&gt;');
+                };
+                var fname = file.replace(/^.*[\\\/]/, '');
+                var pname = fname.substring(0, fname.length - 5).replace(/-/g,' ');
+                return "<div class='pattern'><div class='pattern-title'>"+pname+"</div><div class='pattern-example'>" + grunt.template.process(grunt.file.read(file)) + "</div><pre><code class='prettyprint'>"+ escapeHTML(grunt.template.process(grunt.file.read(file))) +"</code></pre>" + "</div>";
               });
               return frags.join('');
             }
